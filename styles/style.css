@@ -1,0 +1,114 @@
+body {
+	font-family: 'Ubuntu', sans-serif;
+	margin: 0;
+	background-color: #fbf4ff;
+}
+
+/* Colors: main #cc93ff, accent: #bc76fb */
+
+.sidebarNav {
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	background-color: #fff;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+}
+
+.sidebarNav a {
+	display: block;
+	color: black;
+	padding: 16px;
+	text-decoration: none;
+}
+
+.sidebarNav a.active {
+	color: #cc93ff;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.sidebarNav a:hover:not(.active) {
+	color: #bc76fb;
+	font-size: 17px;
+	font-weight: 700;
+}
+
+#content {
+	margin-left: 200px;
+	padding: 1px 16px;
+	height: 1000px;
+}
+
+#logo img {
+	max-width: 180px;
+	align-items: center;
+	margin: 10px 5px;
+}
+
+.wrapper {
+	max-width: 800px;
+	margin: auto;
+	min-height: 800px;
+	padding: 10px;
+}
+
+#promoBanner img {
+	border-radius: 10px;
+	max-width: 800px;
+	max-height: 400px;
+}
+
+#foodRecomendation {
+	display: flex;
+	justify-content: space-between;
+}
+.foodBlock {
+	background-color: #fff;
+	border-radius: 10px;
+	max-width: 21%;
+	padding: 10px;
+	display: inherit;
+	flex-direction: column;
+}
+
+.foodBlock img {
+	max-width: 100%;
+}
+
+.foodName {
+	font-weight: 600;
+	padding-bottom: 5px;
+}
+
+.foodPrice {
+	color: #bc76fb;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.addToCart {
+	float: right;
+}
+@media screen and (max-width: 700px) {
+	.sidebarNav {
+		width: 100%;
+		height: auto;
+		position: relative;
+		display: flex;
+	}
+	.sidebarNav a {
+		float: left;
+	}
+	#content {
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.sidebarNav a {
+		text-align: center;
+		float: none;
+	}
+}
