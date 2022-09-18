@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
 		<link rel="stylesheet" href="styles/style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,31 +16,81 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
 		/>
-		<title>Document</title>
 	</head>
 	<body>
 		<header>
 			<div class="sidebarNav">
 				<div id="logo"><img src="img/logo.png" alt="foodcort" /></div>
-				<a class="active" href="index.html"
-					><i class="fa-solid fa-home"></i> Home</a
-				>
+				<a class="active" href="#home"><i class="fa-solid fa-home"></i> Home</a>
 				<a href="#news"><i class="fa-solid fa-pizza-slice"></i> Pizza</a>
 				<a href="#contact"><i class="fa-solid fa-bowl-food"></i> Soups</a>
 				<a href="#about"
 					><i class="fa-solid fa-martini-glass-citrus"></i> Drinks</a
 				>
-				<a href="delivery.html"><i class="fa-solid fa-truck"></i> Delivery</a>
+				<a href="#about"><i class="fa-solid fa-truck"></i> Delivery</a>
 				<a href="#about"><i class="fa-solid fa-star"></i> Reviews</a>
 			</div>
 		</header>
+
 		<div id="content">
 			<div class="wrapper">
-				<h1>Don't miss our offer!</h1>
-				<div id="promoBanner">
-					<img src="img/pizzapromo.jpg" alt="Pizza promo" />
+				<div id="foodPage-upper">
+					<div id="foodImg">
+						<img src="img/Pepperoni.png" alt="Pizza Peperoni" />
+					</div>
+					<div id="foodDesc">
+						<div id="foodTitle">Peperoni</div>
+						<div id="foodText">
+							Peperoni is reminiscent of the salamis of southern Italy. Made
+							from pork, beef, and sometimes turkey, it sports a deep red color,
+							a little spice, and a slightly smoky flavor. Our decadent pizza
+							topped with pepperoni is really easy to put together.
+						</div>
+						<div class="foodTextAttr">Pick your size</div>
+						<div id="single-choice">
+							<ul>
+								<li>
+									<input
+										type="radio"
+										id="pizzaSmall"
+										name="size"
+										data-variation_id="186731"
+										data-cart_key=""
+										data-cart_quantity="0"
+										data-size="s"
+										checked="checked"
+									/>
+									<label for="pizzaSmall">
+										<div class="var-name">Peperoni 32 cm</div>
+										<span>12.49€</span>
+									</label>
+								</li>
+
+								<li>
+									<input
+										type="radio"
+										id="pizzaBig"
+										name="size"
+										data-variation_id="186731"
+										data-cart_key=""
+										data-cart_quantity="0"
+										data-size="s"
+									/>
+									<label for="pizzaBig">
+										<div class="var-name">Peperoni 42 cm</div>
+										<span>14.99€</span>
+									</label>
+								</li>
+							</ul>
+							<button class="makeOrder">Add to cart</button>
+						</div>
+					</div>
 				</div>
-				<h2>Popular today</h2>
+				<div id="ingredientList">
+					<div class="ingredientTitle">Ingredients</div>
+					<span>Mozzarella, Pepperoni, Pizza Sauce</span>
+				</div>
+				<h1>We also reccomend</h1>
 				<div class="foodRecomendation">
 					<div class="foodBlock">
 						<img src="img/sushi-set1.png" alt="" />
@@ -102,59 +153,7 @@
 						</div>
 					</div>
 				</div>
-				<h2>Hungry for pizza?</h2>
-				<div class="foodRecomendation">
-					<div class="foodBlock">
-						<img src="img/Pepperoni.png" alt="" />
-						<div class="foodInfo">
-							<div class="foodName">Peperoni pizza.</div>
-							<div class="foodPrice">
-								12.49 €
-								<button class="addToCart">
-									<i class="fa-solid fa-cart-shopping"></i>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="foodBlock">
-						<img src="img/Pepperoni.png" alt="" />
-						<div class="foodInfo">
-							<div class="foodName">Peperoni pizza.</div>
-							<div class="foodPrice">
-								12.49 €
-								<button class="addToCart">
-									<i class="fa-solid fa-cart-shopping"></i>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="foodBlock">
-						<img src="img/Pepperoni.png" alt="" />
-						<div class="foodInfo">
-							<div class="foodName">Peperoni pizza.</div>
-							<div class="foodPrice">
-								12.49 €
-								<button class="addToCart">
-									<i class="fa-solid fa-cart-shopping"></i>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="foodBlock">
-						<img src="img/Pepperoni.png" alt="" />
-						<div class="foodInfo">
-							<div class="foodName">Peperoni pizza.</div>
-							<div class="foodPrice">
-								12.49 €
-								<button class="addToCart">
-									<i class="fa-solid fa-cart-shopping"></i>
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
-		<footer></footer>
 	</body>
 </html>

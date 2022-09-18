@@ -60,7 +60,7 @@ body {
 	max-height: 400px;
 }
 
-#foodRecomendation {
+.foodRecomendation {
 	display: flex;
 	justify-content: space-between;
 }
@@ -83,13 +83,231 @@ body {
 }
 
 .foodPrice {
-	color: #bc76fb;
+	color: #bc76fb !important;
 	font-size: 18px;
 	font-weight: 700;
 }
 
 .addToCart {
 	float: right;
+}
+
+h2 {
+	margin-top: 40px;
+}
+
+#foodPage-upper {
+	display: flex;
+	padding: 20px;
+	background-color: #fff;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	margin-top: 50px;
+}
+
+#foodImg img {
+	max-width: 300px;
+	max-height: 300px;
+}
+
+#foodDesc {
+	margin-left: 30px;
+}
+
+#single-choice ul {
+	list-style-type: none;
+	display: flex;
+	padding-left: 0;
+	margin-top: 5px;
+}
+
+#single-choice ul li span {
+	font-weight: 700;
+	display: block;
+	color: #0b0b0b;
+}
+
+#single-choice ul li {
+	float: left;
+	width: 48.5%;
+	margin-right: 6%;
+}
+
+#single-choice ul li input {
+	display: none;
+}
+
+#single-choice ul li label {
+	background: #fbf4ff;
+	width: 100%;
+	padding: 16px 5px 16px 14px;
+	font-size: 16px;
+	line-height: 1.4;
+	color: #7e7e7e;
+	border: 2px solid transparent;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+	display: inline-block;
+}
+
+table {
+	border-radius: 5px;
+	text-align: center;
+	padding: 10px;
+	border: 1px solid #cb92fb;
+	margin: auto;
+}
+table thead {
+	border-bottom: 1px solid #dfdfdf;
+}
+
+table tbody tr td {
+	padding-top: 20px;
+	border-bottom: 1px solid #dfdfdf;
+	padding: 10px 10px;
+}
+
+table tbody tr:last-child td {
+	border-bottom: none;
+}
+
+table tbody tr td:first-child {
+	border-right: 1px solid #dfdfdf;
+	padding: 10px 15px;
+}
+#single-choice ul li input:checked + label {
+	border: 2px solid #cb92fb;
+}
+
+#foodTitle {
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.foodTextAttr {
+	margin-top: 15px;
+	color: rgb(148, 148, 148);
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+button {
+	background-color: #bc76fb;
+	padding: 20px;
+	border: none;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+}
+
+.makeOrder {
+	width: 100%;
+}
+
+button:hover {
+	background-color: #cb92fb;
+}
+
+#ingredientList {
+	background-color: #fff;
+	border-top: 1px solid #ebebeb;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	padding: inherit;
+}
+
+.foodPrice {
+	color: #ff8181;
+}
+
+.ingredientTitle {
+	color: #000;
+	font-weight: 700;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+
+#reviewBlock {
+	margin-top: 30px;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+#reviewBlock form {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+label {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+textarea {
+	resize: vertical;
+}
+
+.reviewBtn {
+	margin-top: 10px;
+}
+
+.wrapper h1 {
+	text-align: center;
+}
+
+#clientReviews {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.review {
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 20px;
+	display: inline-block;
+	max-width: 44%;
+	transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+	margin-bottom: 10px;
+}
+
+.review:hover {
+	box-shadow: 6px 6px 6px #8888883d;
+	transform: translateY(-5px);
+}
+
+.reviewerName {
+	font-size: 20px;
+	color: #03045e;
+	font-weight: 700;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.review + .fullWidth {
+	flex: 1;
+	max-width: 100%;
+}
+
+.reviewText {
+	margin-top: 10px;
+}
+
+.rName {
+	font-weight: 700;
+}
+
+.rDate {
+	color: rgb(197, 197, 197);
+}
+
+.rRating {
+	float: right;
+	font-weight: 700;
 }
 @media screen and (max-width: 700px) {
 	.sidebarNav {
