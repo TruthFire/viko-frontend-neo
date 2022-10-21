@@ -1,332 +1,572 @@
 body {
-	font-family: 'Ubuntu', sans-serif;
-	margin: 0;
-	background-color: #fbf4ff;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  background-color: #fbf4ff;
 }
 
 /* Colors: main #cc93ff, accent: #bc76fb */
 
 .sidebarNav {
-	margin: 0;
-	padding: 0;
-	width: 200px;
-	background-color: #fff;
-	position: fixed;
-	height: 100%;
-	overflow: auto;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #fff;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
 }
 
 .sidebarNav a {
-	display: block;
-	color: black;
-	padding: 16px;
-	text-decoration: none;
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
 }
 
 .sidebarNav a.active {
-	color: #cc93ff;
-	font-size: 18px;
-	font-weight: 700;
+  color: #cc93ff;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .sidebarNav a:hover:not(.active) {
-	color: #bc76fb;
-	font-size: 17px;
-	font-weight: 700;
+  color: #bc76fb;
+  font-size: 17px;
+  font-weight: 700;
 }
 
 #content {
-	margin-left: 200px;
-	padding: 1px 16px;
-	height: 1000px;
+  margin-left: 200px;
+  height: 1000px;
 }
 
 #logo img {
-	max-width: 180px;
-	align-items: center;
-	margin: 10px 5px;
+  max-width: 180px;
+  align-items: center;
+  margin: 10px 5px;
+}
+
+#logo\ minilogo {
+  display: none;
 }
 
 .wrapper {
-	max-width: 800px;
-	margin: auto;
-	min-height: 800px;
-	padding: 10px;
+  max-width: 800px;
+  margin: auto;
+  min-height: 800px;
+  padding: 10px;
 }
 
 #promoBanner img {
-	border-radius: 10px;
-	max-width: 800px;
-	max-height: 400px;
+  border-radius: 10px;
+  max-width: 100%;
+  max-height: 400px;
 }
 
 .foodRecomendation {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .foodBlock {
-	background-color: #fff;
-	border-radius: 10px;
-	max-width: 21%;
-	padding: 10px;
-	display: inherit;
-	flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  max-width: 21%;
+  padding: 10px;
+  display: inherit;
+  flex-direction: column;
+  margin-bottom: 10px;
 }
 
 .foodBlock img {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 .foodName {
-	font-weight: 600;
-	padding-bottom: 5px;
+  font-weight: 600;
+  padding-bottom: 5px;
 }
 
 .foodPrice {
-	color: #bc76fb !important;
-	font-size: 18px;
-	font-weight: 700;
+  color: #bc76fb !important;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .addToCart {
-	float: right;
+  float: right;
+  padding: 1em;
 }
 
 h2 {
-	margin-top: 40px;
+  margin-top: 40px;
 }
 
 #foodPage-upper {
-	display: flex;
-	padding: 20px;
-	background-color: #fff;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	margin-top: 50px;
+  display: flex;
+  padding: 20px;
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 50px;
 }
 
 #foodImg img {
-	max-width: 300px;
-	max-height: 300px;
+  max-width: 300px;
+  max-height: 300px;
 }
 
 #foodDesc {
-	margin-left: 30px;
+  margin-left: 30px;
 }
 
 #single-choice ul {
-	list-style-type: none;
-	display: flex;
-	padding-left: 0;
-	margin-top: 5px;
+  list-style-type: none;
+  display: flex;
+  padding-left: 0;
+  margin-top: 5px;
 }
 
 #single-choice ul li span {
-	font-weight: 700;
-	display: block;
-	color: #0b0b0b;
+  font-weight: 700;
+  display: block;
+  color: #0b0b0b;
 }
 
 #single-choice ul li {
-	float: left;
-	width: 48.5%;
-	margin-right: 6%;
+  float: left;
+  width: 48.5%;
+  margin-right: 6%;
 }
 
 #single-choice ul li input {
-	display: none;
+  display: none;
 }
 
 #single-choice ul li label {
-	background: #fbf4ff;
-	width: 100%;
-	padding: 16px 5px 16px 14px;
-	font-size: 16px;
-	line-height: 1.4;
-	color: #7e7e7e;
-	border: 2px solid transparent;
-	cursor: pointer;
-	transition: 0.2s ease-in-out;
-	display: inline-block;
+  background: #fbf4ff;
+  width: 100%;
+  padding: 16px 5px 16px 14px;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #7e7e7e;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  display: inline-block;
 }
 
+#deliveryPrices {
+  margin-top: 20px;
+}
 table {
-	border-radius: 5px;
-	text-align: center;
-	padding: 10px;
-	border: 1px solid #cb92fb;
-	margin: auto;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #cb92fb;
+  margin: auto;
+  overflow: auto;
+  width: 100%;
+  table-layout: fixed;
 }
 table thead {
-	border-bottom: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
 }
 
 table tbody tr td {
-	padding-top: 20px;
-	border-bottom: 1px solid #dfdfdf;
-	padding: 10px 10px;
+  padding-top: 20px;
+  border-bottom: 1px solid #dfdfdf;
+  padding: 10px 10px;
 }
 
 table tbody tr:last-child td {
-	border-bottom: none;
+  border-bottom: none;
 }
 
 table tbody tr td:first-child {
-	border-right: 1px solid #dfdfdf;
-	padding: 10px 15px;
+  border-right: 1px solid #dfdfdf;
+  padding: 10px 15px;
 }
 #single-choice ul li input:checked + label {
-	border: 2px solid #cb92fb;
+  border: 2px solid #cb92fb;
 }
 
 #foodTitle {
-	font-size: 24px;
-	font-weight: 700;
-	text-transform: uppercase;
-	margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .foodTextAttr {
-	margin-top: 15px;
-	color: rgb(148, 148, 148);
-	text-transform: uppercase;
-	font-size: 12px;
+  margin-top: 15px;
+  color: rgb(148, 148, 148);
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
 button {
-	background-color: #bc76fb;
-	padding: 20px;
-	border: none;
-	cursor: pointer;
-	transition: 0.2s ease-in-out;
+  background-color: #bc76fb;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
 
 .makeOrder {
-	width: 100%;
+  width: 100%;
 }
 
 button:hover {
-	background-color: #cb92fb;
+  background-color: #cb92fb;
 }
 
 #ingredientList {
-	background-color: #fff;
-	border-top: 1px solid #ebebeb;
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
-	padding: inherit;
+  background-color: #fff;
+  border-top: 1px solid #ebebeb;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: inherit;
 }
 
-.foodPrice {
-	color: #ff8181;
-}
-
-.ingredientTitle {
-	color: #000;
-	font-weight: 700;
-	margin-bottom: 5px;
-	text-transform: uppercase;
-}
-
-#reviewBlock {
-	margin-top: 30px;
-	background-color: #fff;
-	border-radius: 10px;
-	padding: 20px;
-}
-
-#reviewBlock form {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-}
-
-label {
-	margin-top: 10px;
-	margin-bottom: 5px;
+form input {
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 textarea {
-	resize: vertical;
+  width: 100%;
+  box-sizing: border-box;
+}
+.foodPrice {
+  color: #ff8181;
+}
+
+.ingredientTitle {
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+#reviewBlock {
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#reviewBlock form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+textarea {
+  resize: vertical;
 }
 
 .reviewBtn {
-	margin-top: 10px;
+  margin-top: 10px;
 }
 
 .wrapper h1 {
-	text-align: center;
+  text-align: center;
 }
 
 #clientReviews {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .review {
-	background-color: #fff;
-	border-radius: 5px;
-	padding: 20px;
-	display: inline-block;
-	max-width: 44%;
-	transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
-	margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  display: inline-block;
+  max-width: 44%;
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+  margin-bottom: 10px;
 }
 
 .review:hover {
-	box-shadow: 6px 6px 6px #8888883d;
-	transform: translateY(-5px);
+  box-shadow: 6px 6px 6px #8888883d;
+  transform: translateY(-5px);
 }
 
 .reviewerName {
-	font-size: 20px;
-	color: #03045e;
-	font-weight: 700;
-	text-align: center;
-	padding-bottom: 10px;
+  font-size: 20px;
+  color: #03045e;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 .review + .fullWidth {
-	flex: 1;
-	max-width: 100%;
+  flex: 1;
+  max-width: 100%;
 }
 
 .reviewText {
-	margin-top: 10px;
+  margin-top: 10px;
 }
 
 .rName {
-	font-weight: 700;
+  font-weight: 700;
 }
 
 .rDate {
-	color: rgb(197, 197, 197);
+  color: rgb(197, 197, 197);
 }
 
 .rRating {
-	float: right;
-	font-weight: 700;
+  float: right;
+  font-weight: 700;
 }
+
+.addToCart {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#authBlock {
+  background-color: #fff;
+  border-radius: 5px;
+  border-right: 20px solid #bc76fb;
+  padding: 20px;
+  max-width: 650px;
+  margin: auto;
+}
+
+#ns {
+  display: flex;
+  flex-direction: row;
+}
+
+.inpSect {
+  margin-right: 20px;
+  width: 45.7%;
+}
+
+.regPage {
+  background-color: #fff;
+  padding: 10px;
+  border-right: 20px solid #bc76fb;
+  max-width: 700px;
+}
+
+.regPage select,
+.regPage input {
+  padding: 15px;
+  background-color: #efefef;
+  border: none;
+  width: 90%;
+  box-sizing: content-box;
+  border-radius: 5px;
+}
+
+.regPage button {
+  margin-top: 20px;
+}
+
+input,
+label {
+  display: block;
+}
+
+#authBlock input[type="password"],
+#authBlock input[type="text"] {
+  width: 90%;
+  margin-bottom: 30px;
+  height: 20px;
+}
+
+#authBlock input {
+  padding: 5px;
+}
+#rememberBlock {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+#rememberBlock label {
+  margin: 0;
+}
+
+.fpwd {
+  float: right;
+  margin-right: 40px;
+}
+
+#signUpMobile {
+  bottom: 0;
+  position: sticky;
+  background-color: #f7f7f7cf;
+  text-align: center;
+  padding: 10px;
+}
+
+footer {
+  text-align: center;
+  background-color: #fff;
+  padding: 10px 0px;
+}
+
+@media screen and (max-width: 950px) {
+  .foodRecomendation {
+    flex-wrap: wrap;
+  }
+
+  .foodBlock {
+    min-width: 45%;
+    align-items: center;
+  }
+  .foodBlock img {
+    max-width: 60%;
+  }
+
+  .foodName {
+    font-size: 0.9em;
+  }
+
+  .foodPrice {
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+  }
+
+  .foodInfo {
+    width: 100%;
+  }
+
+  .addToCart {
+    margin-top: 10px;
+    width: 100%;
+    padding: 0.6rem;
+  }
+
+  #foodPage-upper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #foodDesc {
+    margin-left: 0px;
+  }
+
+  .review {
+    max-width: 100%;
+  }
+}
+
 @media screen and (max-width: 700px) {
-	.sidebarNav {
-		width: 100%;
-		height: auto;
-		position: relative;
-		display: flex;
-	}
-	.sidebarNav a {
-		float: left;
-	}
-	#content {
-		margin-left: 0;
-	}
+  .sidebarNav {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    gap: 0.5%;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .sidebarNav a {
+    float: left;
+  }
+  #content {
+    margin-left: 0;
+  }
+
+  #ns {
+    flex-direction: column;
+  }
+
+  .inpSect {
+    width: 100%;
+  }
+
+  .regPage {
+    border-right: none;
+  }
+
+  #authBlock {
+    border-right: none;
+  }
+}
+
+@media screen and (max-width: 627px) {
+  .sidebarNav > a > span {
+    display: none;
+  }
+  .sidebarNav > a {
+    font-size: 24px;
+  }
+
+  .sidebarNav > a.active {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .foodRecomendation {
+    flex-direction: column;
+  }
+
+  .sidebarNav {
+    gap: 3vw;
+  }
+  .sidebarNav > a > span {
+    display: none;
+  }
+  .foodBlock {
+    max-width: 100%;
+  }
+  #logo {
+    display: none;
+  }
+  #logo\ minilogo {
+    display: block;
+  }
+
+  #single-choice ul {
+    flex-direction: column;
+  }
+
+  #single-choice ul li {
+    width: auto;
+  }
+  #foodImg img {
+    max-width: 75vw;
+  }
 }
 
 @media screen and (max-width: 400px) {
-	.sidebarNav a {
-		text-align: center;
-		float: none;
-	}
+  .sidebarNav a {
+    text-align: center;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 317px) {
+  #logo\ minilogo {
+    display: none;
+  }
+
+  .wrapper,
+  #signUpMobile {
+    min-width: 200px;
+  }
+
+  .sidebarNav,
+  footer {
+    min-width: 220px;
+  }
 }
