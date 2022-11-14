@@ -1,159 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<link rel="stylesheet" href="styles/style.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-		/>
-	</head>
-	<body>
-		<header>
-			<div class="sidebarNav">
-				<div id="logo"><img src="img/logo.png" alt="foodcort" /></div>
-				<a class="active" href="#home"><i class="fa-solid fa-home"></i> Home</a>
-				<a href="#news"><i class="fa-solid fa-pizza-slice"></i> Pizza</a>
-				<a href="#contact"><i class="fa-solid fa-bowl-food"></i> Soups</a>
-				<a href="#about"
-					><i class="fa-solid fa-martini-glass-citrus"></i> Drinks</a
-				>
-				<a href="#about"><i class="fa-solid fa-truck"></i> Delivery</a>
-				<a href="#about"><i class="fa-solid fa-star"></i> Reviews</a>
-			</div>
-		</header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delivery info</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="sidebarNav">
+        <div id="logo"><img src="img/logo.png" alt="foodcort" /></div>
+        <div id="logo minilogo">
+          <img src="img/logo-mini.png" alt="foodcort" />
+        </div>
+        <a href="index.html"
+          ><i class="fa-solid fa-home"></i> <span>Home</span></a
+        >
+        <a class="active" href="foodpage.html"
+          ><i class="fa-solid fa-pizza-slice"></i> <span>Pizza</span></a
+        >
+        <a href="delivery.html"
+          ><i class="fa-solid fa-truck"></i> <span>Delivery</span></a
+        >
+        <a href="reviews.html"
+          ><i class="fa-solid fa-star"></i> <span>Reviews</span></a
+        >
+      </div>
+    </header>
 
-		<div id="content">
-			<div class="wrapper">
-				<div id="foodPage-upper">
-					<div id="foodImg">
-						<img src="img/Pepperoni.png" alt="Pizza Peperoni" />
-					</div>
-					<div id="foodDesc">
-						<div id="foodTitle">Peperoni</div>
-						<div id="foodText">
-							Peperoni is reminiscent of the salamis of southern Italy. Made
-							from pork, beef, and sometimes turkey, it sports a deep red color,
-							a little spice, and a slightly smoky flavor. Our decadent pizza
-							topped with pepperoni is really easy to put together.
-						</div>
-						<div class="foodTextAttr">Pick your size</div>
-						<div id="single-choice">
-							<ul>
-								<li>
-									<input
-										type="radio"
-										id="pizzaSmall"
-										name="size"
-										data-variation_id="186731"
-										data-cart_key=""
-										data-cart_quantity="0"
-										data-size="s"
-										checked="checked"
-									/>
-									<label for="pizzaSmall">
-										<div class="var-name">Peperoni 32 cm</div>
-										<span>12.49€</span>
-									</label>
-								</li>
+    <div id="content">
+      <div class="wrapper">
+        <div id="foodPage-upper">
+          <div id="foodImg">
+            <img src="img/Pepperoni.png" alt="Pizza Peperoni" />
+          </div>
+          <div id="foodDesc">
+            <div id="foodTitle">Peperoni</div>
+            <div id="foodText">
+              Peperoni is reminiscent of the salamis of southern Italy. Made
+              from pork, beef, and sometimes turkey, it sports a deep red color,
+              a little spice, and a slightly smoky flavor. Our decadent pizza
+              topped with pepperoni is really easy to put together.
+            </div>
+            <div class="foodTextAttr">Pick your size</div>
+            <div id="single-choice">
+              <ul>
+                <li>
+                  <input
+                    type="radio"
+                    id="pizzaSmall"
+                    name="size"
+                    data-variation_id="186731"
+                    data-cart_key=""
+                    data-cart_quantity="0"
+                    data-size="s"
+                    checked="checked"
+                  />
+                  <label for="pizzaSmall">
+                    <div class="var-name">Peperoni 32 cm</div>
+                    <span>12.49€</span>
+                  </label>
+                </li>
 
-								<li>
-									<input
-										type="radio"
-										id="pizzaBig"
-										name="size"
-										data-variation_id="186731"
-										data-cart_key=""
-										data-cart_quantity="0"
-										data-size="s"
-									/>
-									<label for="pizzaBig">
-										<div class="var-name">Peperoni 42 cm</div>
-										<span>14.99€</span>
-									</label>
-								</li>
-							</ul>
-							<button class="makeOrder">Add to cart</button>
-						</div>
-					</div>
-				</div>
-				<div id="ingredientList">
-					<div class="ingredientTitle">Ingredients</div>
-					<span>Mozzarella, Pepperoni, Pizza Sauce</span>
-				</div>
-				<h1>We also reccomend</h1>
-				<div class="foodRecomendation">
-					<div class="foodBlock">
-						<img src="img/sushi-set1.png" alt="" />
-						<div class="foodInfo">
-							<div class="foodName">
-								Set #60. Daidashi (4vnt), Viper (4vnt), Flame (4vnt), Sakura
-								(4vnt).
-							</div>
-							<div class="foodPrice">
-								12.00 € / set
-								<button class="addToCart">
-									<i class="fa-solid fa-cart-shopping"></i>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="foodBlock">
-						<img src="img/sushi-set1.png" alt="" />
-						<div class="foodInfo">
-							<div class="foodName">
-								Set #60. Daidashi (4vnt), Viper (4vnt), Flame (4vnt), Sakura
-								(4vnt).
-							</div>
-							<div class="foodPrice">
-								12.00 € / set
-								<button class="addToCart">
-									<i class="fa-solid fa-cart-shopping"></i>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="foodBlock">
-						<img src="img/sushi-set1.png" alt="" />
-						<div class="foodInfo">
-							<div class="foodName">
-								Set #60. Daidashi (4vnt), Viper (4vnt), Flame (4vnt), Sakura
-								(4vnt)
-							</div>
-							<div class="foodPrice">
-								12.00 € / set
-								<button class="addToCart">
-									<i class="fa-solid fa-cart-shopping"></i>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="foodBlock">
-						<img src="img/sushi-set1.png" alt="" />
-						<div class="foodInfo">
-							<div class="foodName">
-								Set #60. Daidashi (4vnt), Viper (4vnt), Flame (4vnt), Sakura
-								(4vnt).
-							</div>
-							<div class="foodPrice">
-								12.00 € / set
-								<button class="addToCart">
-									<i class="fa-solid fa-cart-shopping"></i>
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</body>
+                <li>
+                  <input
+                    type="radio"
+                    id="pizzaBig"
+                    name="size"
+                    data-variation_id="186731"
+                    data-cart_key=""
+                    data-cart_quantity="0"
+                    data-size="s"
+                  />
+                  <label for="pizzaBig">
+                    <div class="var-name">Peperoni 42 cm</div>
+                    <span>14.99€</span>
+                  </label>
+                </li>
+              </ul>
+              <button class="makeOrder">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div id="ingredientList">
+          <div class="ingredientTitle">Ingredients</div>
+          <span>Mozzarella, Pepperoni, Pizza Sauce</span>
+        </div>
+        <h1>We also reccomend</h1>
+        <div class="foodRecomendation">
+          <div class="foodBlock">
+            <img src="img/sushi-set1.png" alt="" />
+            <div class="foodInfo">
+              <div class="foodName">
+                Set #60. Daidashi (4vnt), Viper (4vnt), Flame (4vnt), Sakura
+                (4vnt).
+              </div>
+              <div class="foodPrice">
+                12.00 € / set
+                <button class="addToCart">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="foodBlock">
+            <img src="img/sushi-set1.png" alt="" />
+            <div class="foodInfo">
+              <div class="foodName">
+                Set #60. Daidashi (4vnt), Viper (4vnt), Flame (4vnt), Sakura
+                (4vnt).
+              </div>
+              <div class="foodPrice">
+                12.00 € / set
+                <button class="addToCart">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="foodBlock">
+            <img src="img/sushi-set1.png" alt="" />
+            <div class="foodInfo">
+              <div class="foodName">
+                Set #60. Daidashi (4vnt), Viper (4vnt), Flame (4vnt), Sakura
+                (4vnt)
+              </div>
+              <div class="foodPrice">
+                12.00 € / set
+                <button class="addToCart">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="foodBlock">
+            <img src="img/sushi-set1.png" alt="" />
+            <div class="foodInfo">
+              <div class="foodName">
+                Set #60. Daidashi (4vnt), Viper (4vnt), Flame (4vnt), Sakura
+                (4vnt).
+              </div>
+              <div class="foodPrice">
+                12.00 € / set
+                <button class="addToCart">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="signUpMobile">
+        <span
+          >You can use all of our feachures after loggin in your account!
+          <a href="login.html"><button>Sign in</button></a></span
+        >
+      </div>
+      <footer>FoodCart © 2022. All rights reserved.</footer>
+    </div>
+  </body>
 </html>

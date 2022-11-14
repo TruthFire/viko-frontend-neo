@@ -1,149 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<link rel="stylesheet" href="styles/style.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-		/>
-	</head>
-	<body>
-		<header>
-			<div class="sidebarNav">
-				<div id="logo"><img src="img/logo.png" alt="foodcort" /></div>
-				<a href="index.html"><i class="fa-solid fa-home"></i> Home</a>
-				<a href="#news"><i class="fa-solid fa-pizza-slice"></i> Pizza</a>
-				<a href="#contact"><i class="fa-solid fa-bowl-food"></i> Soups</a>
-				<a href="#about"
-					><i class="fa-solid fa-martini-glass-citrus"></i> Drinks</a
-				>
-				<a class="active" href="delivery.html"
-					><i class="fa-solid fa-truck"></i> Delivery</a
-				>
-				<a href="#about"><i class="fa-solid fa-star"></i> Reviews</a>
-			</div>
-		</header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client reviews</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="sidebarNav">
+        <div id="logo"><img src="img/logo.png" alt="foodcort" /></div>
+        <div id="logo minilogo">
+          <img src="img/logo-mini.png" alt="foodcort" />
+        </div>
+        <a href="index.html"
+          ><i class="fa-solid fa-home"></i> <span>Home</span></a
+        >
+        <a href="foodpage.html"
+          ><i class="fa-solid fa-pizza-slice"></i> <span>Pizza</span></a
+        >
+        <a href="delivery.html"
+          ><i class="fa-solid fa-truck"></i> <span>Delivery</span></a
+        >
+        <a class="active" href="reviews.html"
+          ><i class="fa-solid fa-star"></i> <span>Reviews</span></a
+        >
+      </div>
+    </header>
 
-		<div id="content">
-			<div class="wrapper">
-				<h1>Have somenthind to say? Leave a review!</h1>
-				<span
-					>We care about our clients, and we are willing to become best food
-					delivery service in Lithuania, so we will be glad to hear some
-					feedback from you!</span
-				>
-				<div id="reviewBlock">
-					<form>
-						<label for="nameInput">Your name</label>
-						<input type="text" id="nameInput" placeholder="John Doe" />
-						<label for="emailInput">Your e-mail</label>
-						<input
-							type="email"
-							id="emailInput"
-							placeholder="example@domain.com"
-						/>
-						<label for="orderDate">Date of order</label>
-						<input type="date" id="orderDate" placeholder="Date of order" />
-						<label for="rating">Order rating</label>
-						<input
-							type="number"
-							id="rating"
-							name="rating"
-							min="0"
-							max="5"
-							placeholder="5"
-						/>
-						<label for="reviewText">Order rating</label>
-						<textarea name="reviewText" cols="40" rows="5"></textarea>
-						<button class="reviewBtn">Leave your review.</button>
-					</form>
-				</div>
+    <div id="content">
+      <div class="wrapper">
+        <h1>Have somenthind to say? Leave a review!</h1>
+        <span
+          >We care about our clients, and we are willing to become best food
+          delivery service in Lithuania, so we will be glad to hear some
+          feedback from you!</span
+        >
+        <div id="reviewBlock">
+          <form>
+            <label for="nameInput">Your name</label>
+            <input type="text" id="nameInput" placeholder="John Doe" />
+            <label for="emailInput">Your e-mail</label>
+            <input
+              type="email"
+              id="emailInput"
+              placeholder="example@domain.com"
+            />
+            <label for="orderDate">Date of order</label>
+            <input type="date" id="orderDate" placeholder="Date of order" />
+            <label for="rating">Order rating</label>
+            <input
+              type="number"
+              id="rating"
+              name="rating"
+              min="0"
+              max="5"
+              placeholder="5"
+            />
+            <label for="reviewText">Order rating</label>
+            <textarea name="reviewText" cols="40" rows="5"></textarea>
+            <button class="reviewBtn">Leave your review.</button>
+          </form>
+        </div>
 
-				<h1>Word from our clients</h1>
+        <h1>Word from our clients</h1>
 
-				<div id="clientReviews">
-					<div class="review">
-						<div class="reviewUpper">
-							<div class="reviewerNameDate">
-								<span class="rName">John Doe</span>
-								<span class="rDate">11.19.2022</span>
-								<span class="rRating">5.0</span>
-							</div>
-						</div>
-						<div class="reviewText">
-							Some review text could be here, but i have no ideas, so i'm just
-							writing some random text here, even though i've could have
-							inserted lorem ipsum here, but i don't want to
-						</div>
-					</div>
-					<div class="review">
-						<div class="reviewUpper">
-							<div class="reviewerNameDate">
-								<span class="rName">John Doe</span>
-								<span class="rDate">11.19.2022</span>
-								<span class="rRating">5.0</span>
-							</div>
-						</div>
-						<div class="reviewText">
-							Some review text could be here, but i have no ideas, so i'm just
-							writing some random text here, even though i've could have
-							inserted lorem ipsum here, but i don't want to
-						</div>
-					</div>
-					<div class="review">
-						<div class="reviewUpper">
-							<div class="reviewerNameDate">
-								<span class="rName">John Doe</span>
-								<span class="rDate">11.19.2022</span>
-								<span class="rRating">5.0</span>
-							</div>
-						</div>
-						<div class="reviewText">
-							Some review text could be here, but i have no ideas, so i'm just
-							writing some random text here, even though i've could have
-							inserted lorem ipsum here, but i don't want to
-						</div>
-					</div>
-					<div class="review">
-						<div class="reviewUpper">
-							<div class="reviewerNameDate">
-								<span class="rName">John Doe</span>
-								<span class="rDate">11.19.2022</span>
-								<span class="rRating">5.0</span>
-							</div>
-						</div>
-						<div class="reviewText">
-							Some review text could be here, but i have no ideas, so i'm just
-							writing some random text here, even though i've could have
-							inserted lorem ipsum here, but i don't want to
-						</div>
-					</div>
-					<div class="review fullWidth">
-						<div class="reviewUpper">
-							<div class="reviewerNameDate">
-								<span class="rName">John Doe</span>
-								<span class="rDate">11.19.2022</span>
-								<span class="rRating">5.0</span>
-							</div>
-						</div>
-						<div class="reviewText">
-							Some review text could be here, but i have no ideas, so i'm just
-							writing some random text here, even though i've could have
-							inserted lorem ipsum here, but i don't want to
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</body>
+        <div id="clientReviews">
+          <div class="review">
+            <div class="reviewUpper">
+              <div class="reviewerNameDate">
+                <span class="rName">John Doe</span>
+                <span class="rDate">11.19.2022</span>
+                <span class="rRating">5.0</span>
+              </div>
+            </div>
+            <div class="reviewText">
+              Some review text could be here, but i have no ideas, so i'm just
+              writing some random text here, even though i've could have
+              inserted lorem ipsum here, but i don't want to
+            </div>
+          </div>
+          <div class="review">
+            <div class="reviewUpper">
+              <div class="reviewerNameDate">
+                <span class="rName">John Doe</span>
+                <span class="rDate">11.19.2022</span>
+                <span class="rRating">5.0</span>
+              </div>
+            </div>
+            <div class="reviewText">
+              Some review text could be here, but i have no ideas, so i'm just
+              writing some random text here, even though i've could have
+              inserted lorem ipsum here, but i don't want to
+            </div>
+          </div>
+          <div class="review">
+            <div class="reviewUpper">
+              <div class="reviewerNameDate">
+                <span class="rName">John Doe</span>
+                <span class="rDate">11.19.2022</span>
+                <span class="rRating">5.0</span>
+              </div>
+            </div>
+            <div class="reviewText">
+              Some review text could be here, but i have no ideas, so i'm just
+              writing some random text here, even though i've could have
+              inserted lorem ipsum here, but i don't want to
+            </div>
+          </div>
+          <div class="review">
+            <div class="reviewUpper">
+              <div class="reviewerNameDate">
+                <span class="rName">John Doe</span>
+                <span class="rDate">11.19.2022</span>
+                <span class="rRating">5.0</span>
+              </div>
+            </div>
+            <div class="reviewText">
+              Some review text could be here, but i have no ideas, so i'm just
+              writing some random text here, even though i've could have
+              inserted lorem ipsum here, but i don't want to
+            </div>
+          </div>
+          <div class="review fullWidth">
+            <div class="reviewUpper">
+              <div class="reviewerNameDate">
+                <span class="rName">John Doe</span>
+                <span class="rDate">11.19.2022</span>
+                <span class="rRating">5.0</span>
+              </div>
+            </div>
+            <div class="reviewText">
+              Some review text could be here, but i have no ideas, so i'm just
+              writing some random text here, even though i've could have
+              inserted lorem ipsum here, but i don't want to
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="signUpMobile">
+        <span
+          >You can use all of our feachures after loggin in your account!
+          <a href="login.html"><button>Sign in</button></a></span
+        >
+      </div>
+      <footer>FoodCart © 2022. All rights reserved.</footer>
+    </div>
+  </body>
 </html>

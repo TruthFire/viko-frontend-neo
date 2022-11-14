@@ -1,0 +1,11 @@
+.main-content {
+  max-width: 800px;
+}
+
+.cards {
+  gap: 20px;
+}
+
+.cards .card {
+  max-width: 23%;
+}

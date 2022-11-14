@@ -1,0 +1,197 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="js/sidebar.js" defer></script>
+
+    <title>Register @ FoodCart</title>
+  </head>
+  <body class="bg-slate-200 font-[Poppins] min-w-200p">
+    <nav
+      id="navbar"
+      class="fixed top-0 z-40 flex w-full flex-row justify-between items-center bg-slate-50 px-1 sm:justify-between"
+    >
+      <div class="flex gap-3">
+        <button
+          id="btnSidebarToggler"
+          type="button"
+          class="py-4 text-2xl text-slate-800 hover:text-neutral-700"
+        >
+          <i id="navClosed" class="fa-solid fa-bars h-8 w-8 leading-8"></i>
+
+          <i id="navOpen" class="fa-solid fa-x h-8 w-8 hidden leading-8"></i>
+        </button>
+        <div class="logos flex items-center">
+          <div id="logoBig">
+            <img src="img/logo.png" alt="" />
+          </div>
+          <div id="logoSmall">
+            <img src="img/logo-mini.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <a href="login.html">
+        <button class="p-2 rounded bg-violet-500 mr-3 text-white">
+          Log in
+        </button></a
+      >
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Sidebar start-->
+    <div id="containerSidebar" class="z-40">
+      <div class="navbar-menu relative z-40">
+        <div class="bg-gray-300">
+          <nav
+            id="sidebar"
+            class="fixed left-0 bottom-0 flex w-3/4 gap-3 -translate-x-full flex-col overflow-y-auto bg-slate-50 pt-6 pb-8 sm:max-w-xl lg:w-52 px-1"
+          >
+            <!-- one category / navigation group -->
+
+            <ul class="mb-8 text-sm font-medium flex gap-1 flex-col">
+              <li>
+                <a
+                  class="flex items-center rounded py-3 pl-3 pr-4 text-gray-800 hover:bg-gray-300"
+                  href="index.html"
+                >
+                  <span class="select-none"
+                    ><i class="fa-solid fa-house mr-2"></i>Home</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  class="flex items-center rounded py-3 pl-3 pr-4 text-gray-800 hover:bg-gray-300"
+                  href="foodpage.html"
+                >
+                  <span class="select-none"
+                    ><i class="fa-solid fa-pizza-slice mr-2"></i>Pizza</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  class="flex items-center rounded py-3 pl-3 pr-4 text-gray-800 hover:bg-gray-300"
+                  href="delivery.html"
+                >
+                  <span class="select-none"
+                    ><i class="fa-solid fa-truck mr-2"></i>Delivery</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  class="flex items-center rounded py-3 pl-3 pr-4 text-gray-800 hover:bg-gray-300"
+                  href="reviews.html"
+                >
+                  <span class="select-none"
+                    ><i class="fa-solid fa-face-grin-stars mr-2"></i
+                    >Reviews</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- Sidebar end -->
+
+    <div
+      id="blurredBg"
+      class="backdrop-blur w-full h-full fixed z-30 top-0 left-0 hidden"
+    ></div>
+
+    <main
+      id="content"
+      class="mt-24 lg:ml-[200px] transition-all min-h-[calc(100vh-148px)]"
+    >
+      <div class="max-w-[800px] mx-auto px-1">
+        <form class="p-5 bg-slate-50 rounded-xl shadow-borders">
+          <label class="block mb-6">
+            <span class="text-gray-700">Your email</span>
+            <input
+              name="email"
+              type="email"
+              class="block w-full mt-1 border-gray-300 rounded-md shadow-borders p-2 focus:border-indigo-300 focus:outline-0 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+              placeholder="best_user@here.com"
+            />
+          </label>
+          <label class="block mb-6">
+            <span class="text-gray-700">Password</span>
+            <input
+              name="password"
+              type="password"
+              class="block w-full mt-1 border-gray-300 rounded-md shadow-borders p-2 focus:border-indigo-300 focus:outline-0 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+              placeholder="••••••••••••"
+            />
+          </label>
+          <label class="block mb-6">
+            <span class="text-gray-700">Repeat your password</span>
+            <input
+              name="password_repeat"
+              type="password_repeat"
+              class="block w-full mt-1 border-gray-300 rounded-md shadow-borders p-2 focus:border-indigo-300 focus:outline-0 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+              placeholder="••••••••••••"
+            />
+          </label>
+          <div class="divide-y-2"></div>
+          <label class="block mb-6">
+            <span class="text-gray-700">Your first name</span>
+            <input
+              name="name"
+              type="text"
+              class="block w-full mt-1 border-gray-300 rounded-md shadow-borders p-2 focus:border-indigo-300 focus:outline-0 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+              placeholder="Harry"
+            />
+          </label>
+          <label class="block mb-6">
+            <span class="text-gray-700">Your last name</span>
+            <input
+              name="lastname"
+              type="text"
+              class="block w-full mt-1 border-gray-300 rounded-md shadow-borders p-2 focus:border-indigo-300 focus:outline-0 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+              placeholder="Potter"
+            />
+          </label>
+          <div class="mb-6">
+            <button
+              type="submit"
+              class="h-10 px-5 text-indigo-100 bg-indigo-700 rounded-lg p-2 transition-colors duration-150 w-full focus:shadow-outline hover:bg-indigo-800"
+            >
+              Let me in!
+            </button>
+
+            <span class="block mt-3"
+              >Have an account?
+              <a href="/login.html" class="text-violet-500 underline"
+                >Log in!</a
+              >
+            </span>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer
+      id="footer"
+      class="mt-3 bg-white flex items-center justify-center w-full h-10 bottom-0 z-10"
+    >
+      FoodCart © 2022. All rights reserved.
+    </footer>
+  </body>
+</html>
