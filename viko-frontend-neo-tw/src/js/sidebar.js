@@ -51,3 +51,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   sidebar.style.top = parseInt(navbar.clientHeight) - 1 + 'px';
 });
+
+if (localStorage.theme === 'dark' ) {
+  document.documentElement.classList.add('dark')
+} else {
+  document.documentElement.classList.remove('dark')
+}
+
+function switchTheme() {
+  localStorage.theme == 'light' ? localStorage.theme = 'dark' : localStorage.theme = 'light';
+  document.documentElement.classList.toggle('dark')
+}

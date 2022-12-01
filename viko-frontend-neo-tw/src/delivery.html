@@ -21,10 +21,12 @@
 
     <title>Delivery @ FoodCart</title>
   </head>
-  <body class="bg-slate-200 font-[Poppins] min-w-200p">
+  <body
+    class="bg-slate-200 font-[Poppins] min-w-200p dark:bg-slate-900 dark:text-slate-100"
+  >
     <nav
       id="navbar"
-      class="fixed top-0 z-40 flex w-full flex-row justify-between items-center bg-slate-50 px-1 sm:justify-between"
+      class="fixed top-0 z-40 flex w-full flex-row justify-between items-center bg-slate-50 px-1 sm:justify-between dark:bg-slate-800"
     >
       <div class="flex gap-3">
         <button
@@ -32,9 +34,15 @@
           type="button"
           class="py-4 text-2xl text-slate-800 hover:text-neutral-700"
         >
-          <i id="navClosed" class="fa-solid fa-bars h-8 w-8 leading-8"></i>
+          <i
+            id="navClosed"
+            class="fa-solid fa-bars h-8 w-8 leading-8 dark:text-slate-50"
+          ></i>
 
-          <i id="navOpen" class="fa-solid fa-x h-8 w-8 hidden leading-8"></i>
+          <i
+            id="navOpen"
+            class="fa-solid fa-x h-8 w-8 hidden leading-8 dark:text-slate-50"
+          ></i>
         </button>
         <div class="logos flex items-center">
           <div id="logoBig">
@@ -59,14 +67,14 @@
         <div class="bg-gray-300">
           <nav
             id="sidebar"
-            class="fixed left-0 bottom-0 flex w-3/4 gap-3 -translate-x-full flex-col overflow-y-auto bg-slate-50 pt-6 pb-8 sm:max-w-xl lg:w-52 px-1"
+            class="fixed left-0 bottom-0 flex w-3/4 gap-3 -translate-x-full flex-col overflow-y-auto bg-slate-50 pt-6 pb-8 sm:max-w-xl lg:w-52 px-1 dark:bg-slate-800"
           >
             <!-- one category / navigation group -->
 
             <ul class="mb-8 text-sm font-medium flex gap-1 flex-col">
               <li>
                 <a
-                  class="flex items-center rounded py-3 pl-3 pr-4 text-gray-800 hover:bg-gray-300"
+                  class="flex items-center rounded py-3 pl-3 pr-4 text-gray-800 hover:bg-gray-300 dark:hover:bg-slate-700 dark:text-gray-50"
                   href="index.html"
                 >
                   <span class="select-none"
@@ -76,7 +84,7 @@
               </li>
               <li>
                 <a
-                  class="flex items-center rounded py-3 pl-3 pr-4 text-gray-800 hover:bg-gray-300"
+                  class="flex items-center rounded py-3 pl-3 pr-4 text-gray-800 hover:bg-gray-300 dark:hover:bg-slate-700 dark:text-gray-50"
                   href="foodpage.html"
                 >
                   <span class="select-none"
@@ -86,7 +94,7 @@
               </li>
               <li>
                 <a
-                  class="active flex items-center rounded py-3 pl-3 pr-4 text-gray-800 hover:bg-gray-300"
+                  class="active flex items-center rounded py-3 pl-3 pr-4 text-gray-800 dark:hover:bg-slate-700 dark:text-gray-50"
                   href="delivery.html"
                 >
                   <span class="select-none"
@@ -96,12 +104,22 @@
               </li>
               <li>
                 <a
-                  class="flex items-center rounded py-3 pl-3 pr-4 text-gray-800 hover:bg-gray-300"
+                  class="flex items-center rounded py-3 pl-3 pr-4 text-gray-800 hover:bg-gray-300 dark:hover:bg-slate-700 dark:text-gray-50"
                   href="reviews.html"
                 >
                   <span class="select-none"
                     ><i class="fa-solid fa-face-grin-stars mr-2"></i
                     >Reviews</span
+                  >
+                </a>
+              </li>
+              <li onclick="switchTheme()">
+                <a
+                  class="flex items-center rounded py-3 pl-3 pr-4 text-gray-800 hover:bg-gray-300 dark:text-gray-50 dark:hover:bg-slate-700 cursor-pointer"
+                >
+                  <span class="select-none"
+                    ><i class="fa-solid fa-face-grin-stars mr-2"></i>Switch
+                    theme</span
                   >
                 </a>
               </li>
@@ -162,88 +180,88 @@
           <tbody class="flex-1 sm:flex-none">
             <tr class="flex flex-col flex-no wrap sm:table-row mb-2 sm:mb-0">
               <td
-                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3"
+                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3 dark:bg-slate-700 dark:border-gray-600"
               >
                 < 1 KM
               </td>
               <td
-                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3 truncate"
+                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3 truncate dark:bg-slate-700 dark:border-gray-600"
               >
                 1.5 Eur.
               </td>
               <td
-                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3 truncate"
+                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3 truncate dark:bg-slate-700 dark:border-gray-600"
               >
                 1 Eur.
               </td>
               <td
-                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3 truncate"
+                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3 truncate dark:bg-slate-700 dark:border-gray-600"
               >
                 1.5 Eur.
               </td>
             </tr>
             <tr class="flex flex-col flex-no wrap sm:table-row mb-2 sm:mb-0">
               <td
-                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3"
+                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3 dark:bg-slate-700 dark:border-gray-600"
               >
                 1KM - 3KM
               </td>
               <td
-                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3 truncate"
+                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3 truncate dark:bg-slate-700 dark:border-gray-600"
               >
                 2.5 Eur
               </td>
               <td
-                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3 truncate"
+                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3 truncate dark:bg-slate-700 dark:border-gray-600"
               >
                 2 Eur
               </td>
               <td
-                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3 truncate"
+                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3 truncate dark:bg-slate-700 dark:border-gray-600"
               >
                 2.5 Eur
               </td>
             </tr>
             <tr class="flex flex-col flex-no wrap sm:table-row mb-2 sm:mb-0">
               <td
-                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3"
+                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3 dark:bg-slate-700 dark:border-gray-600"
               >
                 3KM - 5 KM
               </td>
               <td
-                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3 truncate"
+                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3 truncate dark:bg-slate-700 dark:border-gray-600"
               >
                 3.5 Eur.
               </td>
               <td
-                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3 truncate"
+                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3 truncate dark:bg-slate-700 dark:border-gray-600"
               >
                 3 Eur.
               </td>
               <td
-                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3 truncate"
+                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3 truncate dark:bg-slate-700 dark:border-gray-600"
               >
                 3.5 Eur.
               </td>
             </tr>
             <tr class="flex flex-col flex-no wrap sm:table-row mb-2 sm:mb-0">
               <td
-                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3"
+                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3 dark:bg-slate-700 dark:border-gray-600"
               >
                 > 5 KM
               </td>
               <td
-                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3 truncate"
+                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3 truncate dark:bg-slate-700 dark:border-gray-600"
               >
                 4.5 Eur.
               </td>
               <td
-                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3 truncate"
+                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3 truncate dark:bg-slate-700 dark:border-gray-600"
               >
                 4 Eur.
               </td>
               <td
-                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3 truncate"
+                class="border-grey-light bg-slate-50 border hover:bg-gray-100 p-3 truncate dark:bg-slate-700 dark:border-gray-600"
               >
                 4.5 Eur.
               </td>
@@ -254,7 +272,7 @@
     </main>
     <footer
       id="footer"
-      class="mt-3 bg-white flex items-center justify-center w-full h-10"
+      class="mt-3 bg-white flex items-center justify-center w-full h-10 dark:bg-slate-800"
     >
       FoodCart © 2022. All rights reserved.
     </footer>

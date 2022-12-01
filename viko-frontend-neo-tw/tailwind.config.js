@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: ['./src/*.html'],
   theme: {
     extend: {
@@ -14,6 +15,7 @@ module.exports = {
       },
       boxShadow: {
         borders: '0 0 0 1px #dce1e6',
+        darkBorders: '0 0 0 1px #343d4c',
       },
       transition: {
         showForm: 'all 0.6s cubic-bezier(0.9, 0, 0, 0.7)',
