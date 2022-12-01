@@ -19,6 +19,7 @@
     <link href="css/styles.css" rel="stylesheet" />
     <script src="js/sidebar.js" defer></script>
     <script src="js/reviews.js" defer></script>
+    <script src="js/reviewValidation.js" defer></script>
 
     <title>Reviews @ FoodCart</title>
   </head>
@@ -158,12 +159,13 @@
                 <input
                   name="name"
                   type="text"
-                  class="block w-full mt-1 border-gray-300 rounded-md shadow-borders p-2 focus:border-indigo-300 focus:outline-0 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 dark:bg-gray-900 dark:shadow-darkBorders dark:placeholder-slate-200 dark:color:slate-50"
+                  class="block w-full mt-1 border-gray-300 rounded-md shadow-borders p-2 focus:border-indigo-300 focus:outline-0 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 dark:bg-gray-900 dark:shadow-darkBorders dark:placeholder-slate-400 dark:color:slate-50"
                   placeholder="Harry Potter"
                   id="nameInput"
                 />
+                <span class="error text-red-700 mt-2 block"></span>
               </label>
-              <div class="error"></div>
+              <!-- <div class="error"></div> -->
             </div>
 
             <div class="input-control">
@@ -174,11 +176,11 @@
                 <input
                   name="email"
                   type="email"
-                  class="block w-full mt-1 border-gray-300 rounded-md shadow-borders p-2 focus:border-indigo-300 focus:outline-0 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 dark:bg-gray-900 dark:shadow-darkBorders dark:placeholder-slate-200 dark:color:slate-50"
+                  class="block w-full mt-1 border-gray-300 rounded-md shadow-borders p-2 focus:border-indigo-300 focus:outline-0 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 dark:bg-gray-900 dark:shadow-darkBorders dark:placeholder-slate-400 dark:color:slate-50"
                   placeholder="harry.potter@gmail.com"
-                  id="emailInput"
-                /> </label
-              ><span class="error"></span>
+                  id="emailInput" />
+                <span class="error text-red-700 mt-2 block"></span
+              ></label>
             </div>
             <div class="input-control">
               <label class="block mb-6">
@@ -189,11 +191,11 @@
                   name="orderdate"
                   type="date"
                   id="orderDate"
-                  class="block w-full mt-1 border-gray-300 rounded-md shadow-borders p-2 focus:border-indigo-300 focus:outline-0 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 dark:bg-gray-900 dark:shadow-darkBorders dark:placeholder-slate-200 dark:color:slate-50"
+                  class="block w-full mt-1 border-gray-300 rounded-md shadow-borders p-2 focus:border-indigo-300 focus:outline-0 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 dark:bg-gray-900 dark:shadow-darkBorders dark:placeholder-slate-300 dark:color:slate-50"
                   placeholder=""
-                  id="orderDate"
-                /> </label
-              ><span class="error"></span>
+                  id="orderDate" />
+                <span class="error text-red-700 mt-2 block"></span
+              ></label>
             </div>
             <div class="input-control">
               <label class="block mb-6">
@@ -208,9 +210,9 @@
                   value="5"
                   class="block w-full mt-1 border-gray-300 rounded-md shadow-borders p-2 focus:border-indigo-300 focus:outline-0 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 dark:bg-gray-900 dark:shadow-darkBorders dark:placeholder-slate-200 dark:color:slate-50"
                   placeholder=""
-                  id="rating"
-                /> </label
-              ><span class="error"></span>
+                  id="rating" />
+                <span class="error text-red-700 mt-2 block"></span
+              ></label>
             </div>
 
             <div class="input-control">
@@ -224,11 +226,12 @@
                 /></span>
                 <textarea
                   name="message"
-                  class="block w-full mt-1 border-gray-300 rounded-md shadow-borders p-2 focus:outline-0 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 dark:bg-gray-900 dark:shadow-darkBorders dark:placeholder-slate-200 dark:color:slate-50"
+                  class="block w-full mt-1 border-gray-300 rounded-md shadow-borders p-2 focus:outline-0 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 dark:bg-gray-900 dark:shadow-darkBorders dark:placeholder-slate-400 dark:color:slate-50"
                   rows="3"
                   placeholder="What is your favorite pizza? Was it tasty last time? And what about our client service?"
                   id="reviewTextarea"
-                ></textarea></label
+                ></textarea
+                ><span class="error text-red-700 mt-2 block"></span></label
               ><span class="error"></span>
             </div>
             <div class="mb-6">
